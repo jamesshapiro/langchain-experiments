@@ -21,4 +21,4 @@ agent = initialize_agent(
 )
 
 # Now let's test it out!
-agent.run("Who is the King of England's wife? What is her current age raised to the 0.23 power?")
+agent.run("""What is the square root of the King of England's wife's age?""")
