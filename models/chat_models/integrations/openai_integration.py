@@ -11,7 +11,9 @@ from langchain.schema import (
     SystemMessage
 )
 
-chat = ChatOpenAI(temperature=1)
+from langchain.llms import OpenAI
+
+llm = OpenAI(model_name="text-ada-001", n=2, best_of=2)
 
 messages = [
     SystemMessage(content="You are a helpful assistant that translates English to Pig Latin."),
